@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ZAK's DUMB FACE DOT COM</title>
 </head>
 <body>
 
-    <img src="zak.png">
+    <img id="randomImage" src="" alt="Random Image">
+    
+    <script>
+        // List of images to choose from
+        const images = ['zak.png', 'zak2.png', 'zak3.png'];
+
+        // Randomly select an image
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+
+        // Set the src attribute of the img element
+        document.getElementById('randomImage').src = randomImage;
+    </script>
     
 </body>
 </html>
